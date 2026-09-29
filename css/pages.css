@@ -350,6 +350,19 @@
   border-bottom: none;
 }
 
+@media (max-width: 620px) {
+  .deadline-item,
+  .deadline-item--compact {
+    grid-template-columns: 64px 1fr;
+    gap: 12px;
+  }
+
+  .deadline-item > *:last-child {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
 .deadline-item__date {
   text-align: center;
   background: var(--color-primary);
@@ -702,6 +715,13 @@
   gap: 28px;
   align-items: start;
   padding: 40px 0 64px;
+}
+
+@media (max-width: 980px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 .eligibility-list {
@@ -1146,6 +1166,11 @@
 
 .criteria-table { width: 100%; border-collapse: collapse; font-size: 14px; }
 
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
 .criteria-table th, .criteria-table td {
   text-align: left;
   padding: 11px 12px;
@@ -1160,6 +1185,14 @@
 }
 
 .criteria-table tr:last-child td { border-bottom: none; }
+
+@media (max-width: 620px) {
+  .criteria-table th,
+  .criteria-table td {
+    padding: 9px 8px;
+    font-size: 13px;
+  }
+}
 
 .info-row {
   display: flex;
