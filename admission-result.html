@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ผลการคัดเลือก — KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+  <!-- ===================== DASHBOARD HEADER ===================== -->
+  <header class="dash-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="dash-nav">
+        <a href="dashboard.html">แดชบอร์ด</a>
+        <a href="application-form.html">ใบสมัครของฉัน</a>
+        <a href="document-upload.html">เอกสาร</a>
+        <a href="application-tracking.html">ไทม์ไลน์</a>
+        <a href="admission-result.html" class="active">ผลการคัดเลือก</a>
+      </nav>
+
+      <div class="user-chip">
+        <span class="user-chip__avatar">
+          <img src="assets/image/user-profile.png" alt="">
+        </span>
+        <span class="user-chip__meta">
+          <span class="user-chip__name">นายวิษณุ พวงยอด</span>
+          <span class="user-chip__role">ผู้สมัคร · ID 6801100123</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== BODY ===================== -->
+  <main class="dash-page">
+    <div class="container dash-wrap">
+
+      <!-- Result banner -->
+      <div class="result-banner">
+        <span class="result-banner__icon">
+          <img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt="">
+        </span>
+        <div>
+          <span class="badge badge--green badge--glass badge--glass-emphasis">
+            <span class="badge__dot"></span>ผ่านการคัดเลือก
+          </span>
+          <h2>ยินดีด้วย! คุณมีสิทธิ์เข้าศึกษา มจพ. ปีการศึกษา 2588</h2>
+          <p>TCAS 88 รอบ 1 (Portfolio) · เลขที่บัญชีผู้สมัคร 88-0110-00123 · ประกาศเมื่อ 15 ธ.ค. 2587 10:00 น.</p>
+          <a href="confirm-offer.html" class="btn btn--white btn--sm mt-16">ยืนยันสิทธิ์เข้าศึกษา</a>
+        </div>
+      </div>
+
+      <div class="dash-grid">
+
+        <!-- LEFT -->
+        <div>
+
+          <!-- Selection detail -->
+          <div class="card mb-24">
+            <div class="spread card__head">
+              <h2>รายละเอียดการคัดเลือก</h2>
+              <span class="badge badge--green">
+                <span class="badge__dot"></span>ผ่านการคัดเลือก
+              </span>
+            </div>
+            <div class="card__body">
+              <div class="summary-grid" style="background:var(--color-surface);border:none;padding:0">
+                <div><span class="s-lbl">หลักสูตร (คณะ)</span><br><span class="s-val">วิศวกรรมคอมพิวเตอร์
+                    (คณะวิศวกรรมศาสตร์)</span></div>
+                <div><span class="s-lbl">ระดับปริญญา</span><br><span class="s-val">ปริญญาตรี 4 ปี · วศ.บ.</span></div>
+                <div><span class="s-lbl">ปีการศึกษา</span><br><span class="s-val">2588</span></div>
+                <div><span class="s-lbl">รอบการรับสมัคร</span><br><span class="s-val">TCAS 88 รอบ 1 · Portfolio</span>
+                </div>
+                <div><span class="s-lbl">สถานะสิทธิ์</span><br><span
+                    class="s-val s-val--success">ยังไม่ยืนยันสิทธิ์</span></div>
+                <div><span class="s-lbl">เลขที่บัญชีผู้สมัคร</span><br><span class="s-val">88-0110-00123</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next steps -->
+          <div class="card">
+            <div class="spread card__head">
+              <h2>ขั้นตอนถัดไปที่ต้องดำเนินการ</h2>
+            </div>
+            <div class="card__body">
+              <div class="timeline">
+                <div class="timeline__item current">
+                  <span class="timeline__icon current">1</span>
+                  <div class="timeline__date">18 – 21 ธ.ค. 2587</div>
+                  <div class="timeline__title">ยืนยันสิทธิ์เข้าศึกษาผ่านระบบ TCAS</div>
+                  <div class="timeline__desc">เข้าเว็บไซต์ mytcas.com เพื่อยืนยันสิทธิ์ในกรอบเวลาที่กำหนด
+                    หากไม่ยืนยันจะถือว่าสละสิทธิ์
+                    — <a href="confirm-offer.html" class="text-maroon" style="font-weight:600">ดำเนินการยืนยันในระบบ</a>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <span class="timeline__icon upcoming">2</span>
+                  <div class="timeline__date">8 – 10 ม.ค. 2588</div>
+                  <div class="timeline__title">รายงานตัวเข้าศึกษา</div>
+                  <div class="timeline__desc">รายงานตัว ณ คณะวิศวกรรมศาสตร์ พร้อมหลักฐานตามประกาศ</div>
+                </div>
+                <div class="timeline__item">
+                  <span class="timeline__icon upcoming">3</span>
+                  <div class="timeline__date">เปิดเทอม 2588</div>
+                  <div class="timeline__title">ลงทะเบียนเรียนและปฐมนิเทศ</div>
+                  <div class="timeline__desc">ดูรายละเอียดเพิ่มเติมในเว็บไซต์มหาวิทยาลัยเมื่อใกล้เปิดภาคการศึกษา</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <aside>
+          <div class="widget mb-16">
+            <div class="widget__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                <rect x="3" y="4" width="18" height="17" rx="2" />
+                <path d="M8 2v4M16 2v4M3 9h18" />
+              </svg>
+              <h3>กำหนดเวลาสำคัญหลังประกาศผล</h3>
+            </div>
+            <div class="widget__body widget__body--deadline">
+              <div class="row deadline-row">
+                <span class="date-chip"><b>18</b><span>ธ.ค.</span></span>
+                <span><span class="t">ยืนยันสิทธิ์ TCAS</span><br><span class="s">เปิด 18 ธ.ค. 09.00 น.</span></span>
+                <span class="badge badge--red ml-auto">4 วัน</span>
+              </div>
+              <div class="row deadline-row">
+                <span class="date-chip"><b>21</b><span>ธ.ค.</span></span>
+                <span><span class="t">หมดเขตรับรองสิทธิ์</span><br><span class="s">ภายใน 17.00 น.</span></span>
+              </div>
+              <div class="row deadline-row">
+                <span class="date-chip"><b>08</b><span>ม.ค.</span></span>
+                <span><span class="t">รายงานตัวเข้าศึกษา</span><br><span class="s">8 – 10 ม.ค. 2588</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-16" style="padding:0;box-shadow:none">
+            <div class="brand-panel interview-card">
+              <h3>เตรียมตัวก่อนรายงานตัว</h3>
+              <p class="sub">โปรดเตรียมเอกสารต่อไปนี้ให้ครบถ้วน</p>
+              <div class="iv-detail">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <path d="M14 2v6h6" />
+                </svg>
+                <div style="font-size:13px;line-height:1.8">
+                  เอกสารยืนยันตัวตน (บัตรประชาชน)<br>
+                  ใบส่งผลการคัดเลือกจากเว็บไซต์<br>
+                  รูปถ่าย 3x4 จำนวน 4 รูป<br>
+                  ทรานสคริปต์ฉบับจริง 2 ชุด
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget widget--light">
+            <div class="widget__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="12" />
+                <line x1="12" y1="16" x2="12.01" y2="16" />
+              </svg>
+              <h3>ข้อควรทราบ</h3>
+            </div>
+            <div class="widget__body" style="font-size:13px;color:var(--color-text-secondary)">
+              <p class="mb-12">การยืนยันสิทธิ์เข้าศึกษาในรอบใดรอบหนึ่งของ TCAS จะมีผลให้ไม่มีสิทธิ์สมัครในรอบถัดไป
+                ทั้งนี้ผู้สมัครยังคงเลือกได้ว่าจะยืนยันสิทธิ์หรือสละสิทธิ์</p>
+              <a href="#" class="btn btn--outline btn--sm btn--block">ดาวน์โหลดประกาศผล (PDF)</a>
+            </div>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #AC3520;      /* KMUTNB Red/Maroon */
+  --color-secondary: #4A3525;    /* Dark Brown Footer */
+  --color-bg-main: #FAFAFA;      /* Light Gray Page Background */
+  --color-surface: #FFFFFF;      /* Card Background */
+
+  /* Text Colors */
+  --color-text-primary: #333333;
+  --color-text-secondary: #666666;
+  --color-text-light: #FFFFFF;
+
+  /* UI States & Badges — brown family */
+  --color-success: #7A5C3A;
+  --color-warning: #8A6844;
+  --color-danger: #5A3A28;
+  --color-border: #E5E7EB;
+
+  /* Layout Spacing & Radius */
+  --radius-card: 4px;
+  --radius-button: 2px;
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  /* ======================================================
+     Supporting tokens (derived from the base system above)
+     ====================================================== */
+  --color-primary-dark: #5A1212;
+  --color-primary-light: #9E3A3A;
+  --color-primary-soft: rgba(122, 30, 30, 0.12);
+  --color-bg-muted: #F2F2F2;
+  --color-bg-soft: #F6F6F6;
+  --color-text-muted: #999999;
+  --color-info: #6B4A2F;
+  --color-purple: #5C4230;
+  --color-accent: #C9A886;
+  --color-info-dark: #3B2A1A;
+  --color-success-dark: #4A3722;
+  --color-purple-dark: #33241A;
+  --color-warning-dark: #4B3A26;
+  --color-success-soft: #F0E9E0;
+  --color-warning-soft: #F3EBE0;
+  --color-danger-soft: #F0E7E0;
+  --color-info-soft: #EFE7DD;
+  --color-purple-soft: #ECE4DB;
+  --color-secondary-soft: #EFE8DE;  /* Light warm tint of footer brown */
+  --color-secondary-dark: #35261B;  /* Deeper brown for gradient panels */
+  --color-secondary-light: #655346;  /* Lighter brown for gradient end */
+
+  --font-heading: 'Kanit', 'Prompt', sans-serif;
+  --font-body: 'Prompt', 'Kanit', sans-serif;
+
+  --radius-pill: 999px;
+
+  --shadow-hover: 0 8px 22px rgba(0, 0, 0, 0.10);
+  --shadow-banner: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-brand: 0 4px 12px rgba(122, 30, 30, 0.30);
+
+  --max-width: 1180px;
+  --gutter: 24px;
+  --header-height: 76px;
+}

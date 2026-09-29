@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สมัครสมาชิกใหม่ — KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="admission-info.html">ข้อมูลรับสมัคร</a>
+        <a href="programs.html">หลักสูตร</a>
+        <a href="admission-info.html#schedule">กำหนดเวลา</a>
+        <a href="admission-info.html#news">ประกาศ</a>
+        <a href="index.html#faq">คำถามที่พบบ่อย</a>
+      </nav>
+
+      <div class="row header-actions">
+        <a href="login.html" class="btn btn--outline btn--sm">เข้าสู่ระบบ</a>
+        <a href="create-account.html" class="btn btn--primary btn--sm">สมัครสมาชิก</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== AUTH SPLIT ===================== -->
+  <main class="auth">
+
+    <section class="auth__side">
+      <div>
+        <span class="badge badge--auth">
+          <span class="badge__dot"></span>
+          ใช้เวลาเพียง 5 นาที
+        </span>
+        <h1>สร้างบัญชีผู้สมัคร<br><span>เพียงครั้งเดียว</span> สมัครได้ทุกรอบ</h1>
+      </div>
+
+      <div class="row auth__side-feat">
+        <span class="feat-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+        </span>
+        <span>ควบคุมข้อมูลใบสมัครด้วยบัตรประชาชนตัวเดียว</span>
+      </div>
+      <div class="row auth__side-feat">
+        <span class="feat-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span>ติดต่อฝ่ายรับสมัครได้ทันทีเมื่อมีปัญหา</span>
+      </div>
+      <div class="row auth__side-feat">
+        <span class="feat-ic">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <span>ข้อมูลของคุณถูกเก็บอย่างปลอดภัยเป็นความลับ</span>
+      </div>
+    </section>
+
+    <section class="auth__panel">
+      <div class="auth__box">
+        <div class="auth__box-title">
+          <h2>สมัครสมาชิกใหม่</h2>
+          <p>สร้างบัญชีเพื่อเริ่มต้นสมัครเข้าเป็นนักศึกษา</p>
+        </div>
+
+        <!-- Stepper: 3 ขั้น -->
+        <div class="stepper mb-24">
+          <div class="stepper__step current">
+            <span class="stepper__dot">1</span>
+            <span class="stepper__label">ข้อมูลส่วนตัว</span>
+          </div>
+          <div class="stepper__step">
+            <span class="stepper__dot">2</span>
+            <span class="stepper__label">ยืนยันตัวตน</span>
+          </div>
+          <div class="stepper__step">
+            <span class="stepper__dot">3</span>
+            <span class="stepper__label">เสร็จสิ้น</span>
+          </div>
+        </div>
+
+        <form action="dashboard.html" method="get">
+          <div class="field">
+            <label class="field__label" for="nationid">เลขบัตรประจำตัวประชาชน <span class="req">*</span></label>
+            <div class="input-group">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M5 17c.7-1.7 2-2.5 3.5-2.5S11 15.3 11.7 17"/><path d="M14 10h5M14 14h5"/></svg>
+              <input class="input" type="text" id="nationid" placeholder="เลขบัตรประชาชน 13 หลัก" inputmode="numeric">
+            </div>
+            <span class="field__hint">ใช้สำหรับยืนยันตัวตนและตรวจสอบสิทธิ์การสมัคร</span>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="cemail">อีเมลติดต่อ <span class="req">*</span></label>
+            <div class="input-group">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <input class="input" type="email" id="cemail" placeholder="example@email.com" autocomplete="email">
+            </div>
+            <span class="field__hint">ระบบจะส่งรหัสยืนยันและแจ้งผลการคัดเลือกไปยังอีเมลนี้</span>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label" for="phone">เบอร์โทรศัพท์ <span class="req">*</span></label>
+              <div class="input-group">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                <input class="input" type="tel" id="phone" placeholder="08X-XXX-XXXX" inputmode="tel">
+              </div>
+            </div>
+            <div class="field">
+              <label class="field__label" for="cpassword">รหัสผ่าน <span class="req">*</span></label>
+              <div class="input-group">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <input class="input" type="password" id="cpassword" placeholder="อย่างน้อย 8 ตัวอักษร" autocomplete="new-password">
+                <svg class="eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="consent-box mb-16">
+            <label class="check">
+              <input type="checkbox" required>
+              <span><b>ยอมรับเงื่อนไขการใช้งาน</b> — ข้าพเจ้ายืนยันว่าข้อมูลที่กรอกเป็นความจริง และยอมรับข้อกำหนดว่าด้วยการรับสมัครนักศึกษาใหม่ของมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ <a href="#" class="text-maroon">(อ่านรายละเอียด)</a></span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block btn--lg">
+            ดำเนินการต่อ
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </form>
+
+        <div class="auth__foot">
+          มีบัญชีผู้สมัครอยู่แล้ว?
+          <a href="login.html">เข้าสู่ระบบ →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand__logo">
+              <img src="assets/image/logo-kmutnb.png" alt="">
+            </span>
+            <span>
+              <span class="brand__name">KMUTNB Admissions</span>
+              <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+            </span>
+          </a>
+          <p class="footer-brand__desc">
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.) 1518 ถนนประชาราษฎร์ 1 เขตบางซื่อ กรุงเทพมหานคร 10800
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.7-1.6h1.5V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.7V14h2.8v8h3z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.2l7.3-8.3L1.2 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.7H5.3L17.8 20z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+            <a href="#" aria-label="Line"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.2 2 11.3c0 2.8 1.5 5.4 3.8 7-.3.9-.9 2-1 2.2-.1.2.1.4.3.3 1.2-.5 2.6-1.3 3.4-2 1.2.3 2.4.5 3.5.5 5.5 0 10-4.2 10-9.3S17.5 2 12 2zm-2 11.7H7.1c-.2 0-.4-.2-.4-.4V9.6c0-.2.2-.4.4-.4h.2c.2 0 .4.2.4.4v3h2.3c.2 0 .4.2.4.4v.3c0 .2-.2.4-.4.4zm4.3 0h-.2c-.2 0-.4-.2-.4-.4v-3H11.4c-.2 0-.4-.2-.4-.4v-.3c0-.1.1-.4.4-.4h2.9c.2 0 .4.2.4.4v3.7h.2c.2 0 .4.2.4.4v.2c0 .1-.3.4-.4.4zm1.7-3.7h-2.3c-.2 0-.4-.2-.4-.4v-.3c0-.2.2-.3.4-.3h2.3c.2 0 .4.2.3.3v.3c0 .2-.1.4-.3.4zm0 1.5h-2.3c-.2 0-.3-.2-.3-.4v-.3c0-.2.1-.3.3-.3h2.3c.2 0 .4.1.4.3v.3c0 .2-.2.4-.4.4z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>รอบการรับสมัคร</h4>
+          <ul>
+            <li><a href="admission-info.html">TCAS 88 รอบ 1 Portfolio</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 2 โควตา</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 3 Admission</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 4 Direct Admission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ลิงก์ด่วน</h4>
+          <ul>
+            <li><a href="programs.html">ค้นหาหลักสูตร</a></li>
+            <li><a href="login.html">เข้าสู่ระบบผู้สมัคร</a></li>
+            <li><a href="create-account.html">สมัครสมาชิกใหม่</a></li>
+            <li><a href="index.html#faq">คำถามที่พบบ่อย</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ข้อมูลติดต่อ</h4>
+          <ul>
+            <li><a href="#">โทร 0-2555-2000 ต่อ 1221</a></li>
+            <li><a href="#">admission@kmutnb.ac.th</a></li>
+            <li><a href="#">facebook.com/KMUTNBAdmission</a></li>
+            <li><a href="#">เวลาทำการ จ.–ศ. 08.30–16.30 น.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        © 2025 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ · ฝ่ายทะเบียนและประมวลผล · ระบบรับสมัครนักศึกษาใหม่
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
