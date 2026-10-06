@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบรับสมัครนักศึกษาใหม่ — มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html" class="active">หน้าหลัก</a>
+        <a href="admission-info.html">ข้อมูลรับสมัคร</a>
+        <a href="programs.html">หลักสูตร</a>
+        <a href="admission-info.html#schedule">กำหนดเวลา</a>
+        <a href="admission-info.html#news">ประกาศ</a>
+        <a href="index.html#faq">คำถามที่พบบ่อย</a>
+      </nav>
+
+      <div class="row header-actions">
+        <a href="login.html" class="btn btn--primary btn--sm">
+           เข้าสู่ระบบผู้สมัคร
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="hero__eyebrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          ปีการศึกษา 2588 · เปิดรับสมัครแล้ว
+        </span>
+        <h1>เปิดรับสมัคร <span>นักศึกษาใหม่</span><br>มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</h1>
+        <p class="hero__desc">
+          รวมทุกรอบการรับสมัคร TCAS เข้าศึกษาต่อในมหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+          โดยมีรอบ Portfolio, โควตา, Admission และ Direct Admission
+        </p>
+        <div class="hero__cta">
+          <a href="programs.html" class="btn btn--white btn--lg">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            ดูหลักสูตรที่เปิดรับ
+          </a>
+          <a href="create-account.html" class="btn btn--outline-light btn--lg">สมัครสมาชิก</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <b>120+</b>
+            <span>หลักสูตรที่เปิดรับ</span>
+          </div>
+          <div class="hero__stat">
+            <b>12</b>
+            <span>คณะ / วิทยาลัย</span>
+          </div>
+          <div class="hero__stat">
+            <b>20,000+</b>
+            <span>ผู้สมัครต่อปี</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero-card">
+          <div class="row hero-card__head">
+            <img src="assets/image/calendar.jpg" alt="">
+            <div>
+              <b>สรุปกำหนดการรับสมัคร</b>
+              <span>TCAS 88 รอบที่ 1 – Portfolio</span>
+            </div>
+            <span class="badge badge--maroon ml-auto">เปิดรับ</span>
+          </div>
+          <div class="hero-card__row">
+            <span class="lbl">เปิดรับสมัคร</span>
+            <b>1 ก.ย. – 30 พ.ย. 2587</b>
+          </div>
+          <div class="hero-card__row">
+            <span class="lbl">ประกาศผลรอบแรก</span>
+            <b>15 ธ.ค. 2587</b>
+          </div>
+          <div class="hero-card__row">
+            <span class="lbl">ยืนยันสิทธิ์</span>
+            <b>18 – 21 ธ.ค. 2587</b>
+          </div>
+          <div class="hero-card__row">
+            <span class="lbl">รายงานตัว / สละสิทธิ์</span>
+            <b>8 – 10 ม.ค. 2588</b>
+          </div>
+          <a href="admission-info.html" class="btn btn--primary btn--block mt-16">ดูรายละเอียดทั้งหมด</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TCAS ROUNDS ===================== -->
+  <section class="rounds">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>รอบการรับสมัคร <em>TCAS 88</em></h2>
+          <p class="section-title__sub">เลือกสมัครได้มากกว่า 1 รอบ ตามเงื่อนไขที่มหาวิทยาลัยกำหนด</p>
+        </div>
+        <a href="admission-info.html" class="link-more">ดูคำแนะนำทั้งหมด →</a>
+      </div>
+
+      <div class="rounds-grid">
+        <div class="card round-card">
+          <span class="round-card__num">TCAS 88 Round 1</span>
+          <div class="round-card__name">Portfolio
+            <small><span class="thai-name">รอบแฟ้มสะสมผลงาน</span></small>
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>
+            1 ก.ย. – 30 พ.ย. 2587
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            ไม่ต้องสอบวิชาการ
+          </div>
+          <div class="round-card__bottom">
+            <a href="programs.html" class="btn btn--outline btn--sm btn--block">ดูหลักสูตรที่เปิด</a>
+          </div>
+        </div>
+
+        <div class="card round-card">
+          <span class="round-card__num">TCAS 88 Round 2</span>
+          <div class="round-card__name">โควตา
+            <small><span class="thai-name">Quota</span></small>
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>
+            ม.ค. – ก.พ. 2588
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+            โควตาพื้นที่ / สถานศึกษา
+          </div>
+          <div class="round-card__bottom">
+            <a href="programs.html" class="btn btn--outline btn--sm btn--block">ดูหลักสูตรที่เปิด</a>
+          </div>
+        </div>
+
+        <div class="card round-card">
+          <span class="round-card__num">TCAS 88 Round 3</span>
+          <div class="round-card__name">Admission
+            <small><span class="thai-name">รับตรงร่วมกัน</span></small>
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>
+            พ.ค. 2588
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 7H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            ใช้คะแนน TGAT / TPAT
+          </div>
+          <div class="round-card__bottom">
+            <a href="programs.html" class="btn btn--outline btn--sm btn--block">ดูหลักสูตรที่เปิด</a>
+          </div>
+        </div>
+
+        <div class="card round-card">
+          <span class="round-card__num">TCAS 88 Round 4</span>
+          <div class="round-card__name">Direct Admission
+            <small><span class="thai-name">รับตรงอิสระ</span></small>
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>
+            มิ.ย. 2588
+          </div>
+          <div class="round-card__meta">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            ตามกำหนดของแต่ละคณะ
+          </div>
+          <div class="round-card__bottom">
+            <a href="programs.html" class="btn btn--outline btn--sm btn--block">ดูหลักสูตรที่เปิด</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== UPDATE STRIP ===================== -->
+  <div class="strip">
+    <div class="container strip__inner">
+      <span class="strip__label">ข่าวประชาสัมพันธ์</span>
+      <span class="strip__text">▸ ประกาศรายชื่อผู้มีสิทธิ์เข้าศึกษา TCAS 88 รอบ 1 (Portfolio) ประจำปีการศึกษา 2588 · คลิกดูรายละเอียด</span>
+      <span class="strip__text">▸ ระบบสมัครออนไลน์เปิดให้บริการตลอด 24 ชั่วโมง</span>
+    </div>
+  </div>
+
+  <!-- ===================== FACULTIES ===================== -->
+  <section class="faculties">
+    <div class="container">
+      <div class="section-title">
+        <div>
+          <h2>คณะที่เปิดรับสมัคร <em>เด่น ๆ</em></h2>
+          <p class="section-title__sub">หลากหลายคณะและสาขาวิชา พร้อมหลักสูตรที่ตอบโจทย์อนาคต</p>
+        </div>
+        <a href="programs.html" class="link-more">ดูทุกคณะ →</a>
+      </div>
+
+      <div class="faculty-grid">
+        <div class="card faculty-card">
+          <div class="faculty-card__thumb gradient--primary">
+            <img src="assets/image/logo-engineering.jpg" alt="">
+          </div>
+          <div class="faculty-card__body">
+            <h3>คณะวิศวกรรมศาสตร์</h3>
+            <p>หลักสูตรวิศวกรรมศาสตรบัณฑิต ครอบคลุมทุกสาขาชั้นนำของประเทศ</p>
+            <div class="faculty-card__tag">
+              <span>วิศวกรรมเครื่องกล</span>
+              <span>วิศวกรรมไฟฟ้า</span>
+              <span>วิศวกรรมคอมพิวเตอร์</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card faculty-card">
+          <div class="faculty-card__thumb ">
+            <img src="assets/image/logo-sci-app.png" alt="">
+          </div>
+          <div class="faculty-card__body">
+            <h3>คณะวิทยาศาสตร์ประยุกต์</h3>
+            <p>วิทยาศาสตร์และเทคโนโลยีประยุกต์ มุ่งสู่การเป็นนักวิจัยรุ่นใหม่</p>
+            <div class="faculty-card__tag">
+              <span>วิทยาการข้อมูล</span>
+              <span>เคมีอุตสาหกรรม</span>
+              <span>ฟิสิกส์ประยุกต์</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card faculty-card">
+          <div class="faculty-card__thumb" style="margin-bottom: 10px;">
+            <img src="assets/image/FITM-LOGO.png" alt="">
+          </div>
+          <div class="faculty-card__body">
+            <h3>คณะเทคโนโลยีและการจัดการอุตสาหกรรม</h3>
+            <p>เรียนรู้อัจฉริยะดิจิทัล ปัญญาประดิษฐ์ วิศวกรรมเคือข่าย และวิศวกรรมซอฟต์แวร์</p>
+            <div class="faculty-card__tag">
+              <span>วิศวกรรมซอฟต์แวร์</span>
+              <span>ปัญญาประดิษฐ์</span>
+              <span>ความมั่นคงไซเบอร์</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEADLINES + QUICK LOGIN ===================== -->
+  <section class="split-section">
+    <div class="container split-grid">
+      <div class="card">
+        <div class="spread card__head">
+          <h2>กำหนดการรับสมัครที่สำคัญ</h2>
+          <a href="admission-info.html#schedule" class="link-more text-sm">ดูทั้งหมด →</a>
+        </div>
+        <div class="card__body">
+          <div class="deadline-list">
+            <div class="deadline-item">
+              <div class="deadline-item__date"><b>01</b><span>ก.ย.</span></div>
+              <div>
+                <div class="deadline-item__title">เปิดรับสมัคร TCAS 88 รอบ 1 Portfolio</div>
+                <div class="deadline-item__sub">ระบบออนไลน์ ผ่านเว็บไซต์รับสมัคร</div>
+              </div>
+              <span class="badge badge--green">กำลังดำเนินการ</span>
+            </div>
+            <div class="deadline-item">
+              <div class="deadline-item__date"><b>30</b><span>พ.ย.</span></div>
+              <div>
+                <div class="deadline-item__title">ปิดรับสมัคร TCAS 88 รอบ 1 Portfolio</div>
+                <div class="deadline-item__sub">ภายในเวลา 23.59 น.</div>
+              </div>
+              <span class="badge badge--yellow">ใกล้ถึงกำหนด</span>
+            </div>
+            <div class="deadline-item">
+              <div class="deadline-item__date"><b>15</b><span>ธ.ค.</span></div>
+              <div>
+                <div class="deadline-item__title">ประกาศผลผู้มีสิทธิ์เข้าศึกษา</div>
+                <div class="deadline-item__sub">ตรวจผลผ่านเว็บไซต์และอีเมล</div>
+              </div>
+              <span class="badge badge--blue">รอประกาศ</span>
+            </div>
+            <div class="deadline-item">
+              <div class="deadline-item__date"><b>18</b><span>ธ.ค.</span></div>
+              <div>
+                <div class="deadline-item__title">ยืนยันสิทธิ์เข้าศึกษา</div>
+                <div class="deadline-item__sub">ผ่านระบบ TCAS ของ ทปอ.</div>
+              </div>
+              <span class="badge badge--blue">รอประกาศ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="brand-panel quick-login">
+        <h3>พร้อมเริ่มสมัครหรือยัง?</h3>
+        <p>เข้าสู่ระบบเพื่อดำเนินการกรอกใบสมัคร อัปโหลดเอกสาร และติดตามสถานะ</p>
+        <a href="login.html" class="btn btn--white btn--block mb-12">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          เข้าสู่ระบบ
+        </a>
+        <div class="row row--center">
+          <span class="text-sm" style="color:rgba(255,255,255,0.75)">ยังไม่มีบัญชี?</span>
+          <a href="create-account.html" class="text-sm" style="color:var(--color-accent);font-weight:600">สมัครสมาชิกใหม่</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-title section-title--center">
+        <div>
+          <h2>คำถามที่พบบ่อย</h2>
+          <p class="section-title__sub">รวมคำถามยอดนิยมจากผู้สมัครและผู้ปกครอง</p>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary>สมัครได้มากกว่าหนึ่งรอบของ TCAS หรือไม่?</summary>
+          <div class="faq-item__body">
+            ได้ โดยผู้สมัครสามารถสมัครได้ทุกภาคส่วนของ TCAS แต่จะต้องเลือกยืนยันสิทธิ์เพียง 1 แห่งเท่านั้นในรอบที่มีสิทธิ์ ซึ่งเมื่อยืนยันครั้งแรกแล้วจะถูกตัดสิทธิ์ในรอบอื่น ๆ ทันที
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>ต้องใช้เอกสารอะไรบ้างในการสมัครรอบ Portfolio?</summary>
+          <div class="faq-item__body">
+            ได้แก่ รูปถ่าย ปริญญาบัตร/ใบรับรองการศึกษา (ถ้ามี) แฟ้มสะสมผลงาน และเอกสารอื่น ๆ ตามที่แต่ละหลักสูตรกำหนด ให้อัปโหลดเป็นไฟล์ PDF ขนาดไม่เกิน 5 MB
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>ชำระค่าสมัครด้วยวิธีใดได้บ้าง?</summary>
+          <div class="faq-item__body">
+            สามารถชำระผ่านระบบ QR Code ของธนาคาร บัตรเดบิต/เครดิต และเคาน์เตอร์เซอร์วิส ตามแต่รอบการสมัครที่กำหนด
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>ตรวจสอบสถานะใบสมัครอย่างไร?</summary>
+          <div class="faq-item__body">
+            เข้าสู่ระบบบัญชีผู้สมัคร แล้วไปที่เมนู "ติดตามสถานะ" หรือ "ผลการคัดเลือก" เพื่อดูสถานะแบบเรียลไทม์ และรับการแจ้งเตือนทางอีเมลทุกครั้งเมื่อสถานะเปลี่ยน
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>ถ้าลืมรหัสผ่านต้องทำอย่างไร?</summary>
+          <div class="faq-item__body">
+            คลิกที่ "ลืมรหัสผ่าน" ที่หน้าล็อกอิน ระบบจะส่งลิงก์สำหรับรีเซ็ตรหัสผ่านไปยังอีเมลที่ลงทะเบียนไว้ หากไม่ได้อีเมลติดต่อฝ่ายทะเบียนและประมวลผล
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand__logo">
+              <img src="assets/image/logo-kmutnb.png" alt="">
+            </span>
+            <span>
+              <span class="brand__name">KMUTNB Admissions</span>
+              <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+            </span>
+          </a>
+          <p class="footer-brand__desc">
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.) 1518 ถนนประชาราษฎร์ 1 เขตบางซื่อ กรุงเทพมหานคร 10800
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.7-1.6h1.5V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.7V14h2.8v8h3z"/></svg>
+            </a>
+            <a href="#" aria-label="X" title="X">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.2l7.3-8.3L1.2 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.7H5.3L17.8 20z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Line" title="Line">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.2 2 11.3c0 2.8 1.5 5.4 3.8 7-.3.9-.9 2-1 2.2-.1.2.1.4.3.3 1.2-.5 2.6-1.3 3.4-2 1.2.3 2.4.5 3.5.5 5.5 0 10-4.2 10-9.3S17.5 2 12 2zm-2 11.7H7.1c-.2 0-.4-.2-.4-.4V9.6c0-.2.2-.4.4-.4h.2c.2 0 .4.2.4.4v3h2.3c.2 0 .4.2.4.4v.3c0 .2-.2.4-.4.4zm4.3 0h-.2c-.2 0-.4-.2-.4-.4v-3H11.4c-.2 0-.4-.2-.4-.4v-.3c0-.1.1-.4.4-.4h2.9c.2 0 .4.2.4.4v3.7h.2c.2 0 .4.2.4.4v.2c0 .1-.3.4-.4.4zm1.7-3.7h-2.3c-.2 0-.4-.2-.4-.4v-.3c0-.2.2-.3.4-.3h2.3c.2 0 .4.2.3.3v.3c0 .2-.1.4-.3.4zm0 1.5h-2.3c-.2 0-.3-.2-.3-.4v-.3c0-.2.1-.3.3-.3h2.3c.2 0 .4.1.4.3v.3c0 .2-.2.4-.4.4z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>รอบการรับสมัคร</h4>
+          <ul>
+            <li><a href="admission-info.html">TCAS 88 รอบ 1 Portfolio</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 2 โควตา</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 3 Admission</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 4 Direct Admission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ลิงก์ด่วน</h4>
+          <ul>
+            <li><a href="programs.html">ค้นหาหลักสูตร</a></li>
+            <li><a href="login.html">เข้าสู่ระบบผู้สมัคร</a></li>
+            <li><a href="create-account.html">สมัครสมาชิกใหม่</a></li>
+            <li><a href="index.html#faq">คำถามที่พบบ่อย</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ข้อมูลติดต่อ</h4>
+          <ul>
+            <li><span class="footer-dots">
+              <span class="bg-primary"></span>
+              <span class="bg-success"></span>
+              <span class="bg-info"></span>
+              <span class="bg-warning"></span>
+              <span class="bg-purple"></span>
+            </span></li>
+            <li><a href="#">โทร 0-2555-2000 ต่อ 1221</a></li>
+            <li><a href="#">admission@kmutnb.ac.th</a></li>
+            <li><a href="#">facebook.com/KMUTNBAdmission</a></li>
+            <li><a href="#">เวลาทำการ จ.–ศ. 08.30–16.30 น.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        © 2025 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ · ฝ่ายทะเบียนและประมวลผล · ระบบรับสมัครนักศึกษาใหม่
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

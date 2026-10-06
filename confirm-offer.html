@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ยืนยันสิทธิ์เข้าศึกษา — KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== DASHBOARD HEADER ===================== -->
+  <header class="dash-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="dash-nav">
+        <a href="dashboard.html">แดชบอร์ด</a>
+        <a href="application-form.html">ใบสมัครของฉัน</a>
+        <a href="document-upload.html">เอกสาร</a>
+        <a href="application-tracking.html">ไทม์ไลน์</a>
+        <a href="admission-result.html" class="active">ผลการคัดเลือก</a>
+      </nav>
+
+      <div class="header-side">
+        <div class="user-chip">
+          <span class="user-chip__avatar">
+            <img src="assets/image/user-profile.png" alt="">
+          </span>
+          <span class="user-chip__meta">
+            <span class="user-chip__name">นายวิษณุ พวงยอด</span>
+            <span class="user-chip__role">ผู้สมัคร · ID 6801100123</span>
+          </span>
+        </div>
+
+        <a href="index.html" class="btn btn--outline-light btn--sm logout-btn" title="ออกจากระบบ">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          ออกจากระบบ
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== BODY ===================== -->
+  <main class="dash-page">
+    <div class="container dash-wrap">
+      <div class="confirm-wrap">
+
+        <!-- Deadline notice -->
+        <div class="alert alert--warn mb-24">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span>กรอบเวลายืนยันสิทธิ์เปิด <b>18 ธ.ค. 2587 09.00 น.</b> ถึง <b>21 ธ.ค. 2587 17.00 น.</b> หากไม่ดำเนินการภายในกำหนดจะถือว่าสละสิทธิ์</span>
+        </div>
+
+        <!-- Offer detail -->
+        <div class="card mb-24">
+          <div class="spread card__head">
+            <h2>สิทธิ์เข้าศึกษาที่คุณได้รับ</h2>
+            <span class="badge badge--green">
+              <span class="badge__dot"></span>ผ่านการคัดเลือก
+            </span>
+          </div>
+          <div class="card__body">
+            <div class="info-row">
+              <span class="lbl">หลักสูตร</span>
+              <b>วิศวกรรมคอมพิวเตอร์ (วศ.บ.)</b>
+            </div>
+            <div class="info-row">
+              <span class="lbl">คณะ</span>
+              <b>คณะวิศวกรรมศาสตร์</b>
+            </div>
+            <div class="info-row">
+              <span class="lbl">รอบการรับสมัคร</span>
+              <b>TCAS 88 รอบ 1 · Portfolio</b>
+            </div>
+            <div class="info-row">
+              <span class="lbl">ปีการศึกษา</span>
+              <b>2588</b>
+            </div>
+            <div class="info-row">
+              <span class="lbl">เลขที่บัญชีผู้สมัคร</span>
+              <b>88-0110-00123</b>
+            </div>
+            <div class="info-row">
+              <span class="lbl">กำหนดรายงานตัว</span>
+              <b>8 – 10 มกราคม 2588</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- ===================== FORM ===================== -->
+        <form class="offer-form" action="confirm-offer.html#accepted" method="get">
+          <div class="card mb-24">
+            <div class="card__body">
+
+              <div class="form-section">
+                <div class="form-section__title">
+                  <span class="num">1</span>
+                  เลือกการดำเนินการ
+                </div>
+
+                <div class="offer-actions">
+                  <button type="submit" formaction="confirm-offer.html#accepted" class="offer-btn offer-btn--accept">
+                    <img class="icon-img" src="assets/image/checkmark.png" alt="">
+                    <span>
+                      <span class="offer-btn__title">ยืนยันสิทธิ์เข้าศึกษา</span>
+                      <span class="offer-btn__desc">คุณยืนยันที่จะเข้าศึกษาหลักสูตรนี้ และพร้อมดำเนินการรายงานตัวตามกำหนดของคณะ</span>
+                    </span>
+                  </button>
+
+                  <button type="submit" formaction="confirm-offer.html#declined" class="offer-btn offer-btn--decline">
+                    <img class="icon-img" src="assets/image/close.png" alt="">
+                    <span>
+                      <span class="offer-btn__title">สละสิทธิ์เข้าศึกษา</span>
+                      <span class="offer-btn__desc">คุณไม่ประสงค์เข้าศึกษาหลักสูตรนี้ และเข้าใจว่าจะไม่มีสิทธิ์สมัครรอบถัดไป</span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="form-section mb-0">
+                <div class="form-section__title">
+                  <span class="num">2</span>
+                  ยืนยันข้อมูล
+                </div>
+
+                <div class="consent-box">
+                  <label class="check">
+                    <input type="checkbox" name="agree" value="1" required>
+                    <span>
+                      ข้าพเจ้าได้อ่านและเข้าใจเงื่อนไขการยืนยันสิทธิ์เข้าศึกษา รวมถึงยืนยันว่าข้อมูลข้างต้นถูกต้อง
+                      และยินยอมให้มหาวิทยาลัยใช้ข้อมูลเพื่อดำเนินการรับเข้าศึกษา
+                      <span class="text-xs text-gray block">จำเป็นต้องติ๊กช่องนี้ก่อนจึงจะดำเนินการได้</span>
+                    </span>
+                  </label>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </form>
+
+        <!-- ===================== ACCEPTED ===================== -->
+        <section class="offer-state" id="accepted">
+          <div class="success-box">
+            <div class="success-icon">
+              <img class="icon-img" src="assets/image/checkmark.png" alt="">
+            </div>
+            <h1>ยืนยันสิทธิ์เข้าศึกษาเรียบร้อย</h1>
+            <p class="sub">ระบบบันทึกคำขอของคุณเรียบร้อยแล้ว และส่งอีเมลยืนยันไปที่ wisanu@gmail.com</p>
+
+            <div class="card text-left mb-24">
+              <div class="spread card__head">
+                <h2>รายละเอียดการยืนยัน</h2>
+                <span class="badge badge--green">
+                  <span class="badge__dot"></span>ยืนยันแล้ว
+                </span>
+              </div>
+              <div class="card__body">
+                <div class="info-row">
+                  <span class="lbl">สถานะสิทธิ์</span>
+                  <b>ยืนยันสิทธิ์แล้ว</b>
+                </div>
+                <div class="info-row">
+                  <span class="lbl">หลักสูตร</span>
+                  <b>วิศวกรรมคอมพิวเตอร์ (วศ.บ.)</b>
+                </div>
+                <div class="info-row">
+                  <span class="lbl">วันที่ยืนยัน</span>
+                  <b>18 ธันวาคม 2587 · 09:24 น.</b>
+                </div>
+                <div class="info-row">
+                  <span class="lbl">กำหนดรายงานตัว</span>
+                  <b>8 – 10 มกราคม 2588</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="card text-left mb-24">
+              <div class="spread card__head">
+                <h2>ขั้นตอนถัดไป</h2>
+              </div>
+              <div class="card__body" style="padding-top:8px">
+                <div class="timeline">
+                  <div class="timeline__item">
+                    <span class="timeline__icon done">1</span>
+                    <div class="timeline__title">ยืนยันสิทธิ์เข้าศึกษา</div>
+                    <div class="timeline__desc">เสร็จสิ้นเมื่อ 18 ธ.ค. 2587</div>
+                  </div>
+                  <div class="timeline__item current">
+                    <span class="timeline__icon current">2</span>
+                    <div class="timeline__title">รายงานตัวเข้าศึกษา</div>
+                    <div class="timeline__desc">8 – 10 ม.ค. 2588 ณ คณะวิศวกรรมศาสตร์</div>
+                  </div>
+                  <div class="timeline__item">
+                    <span class="timeline__icon upcoming">3</span>
+                    <div class="timeline__title">ลงทะเบียนเรียนและปฐมนิเทศ</div>
+                    <div class="timeline__desc">ตามปฏิทินของมหาวิทยาลัย</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row row--center-wrap">
+              <a href="application-tracking.html" class="btn btn--primary btn--lg">ติดตามสถานะ</a>
+              <a href="dashboard.html" class="btn btn--outline btn--lg">กลับแดชบอร์ด</a>
+            </div>
+            <div class="mt-16">
+              <a href="confirm-offer.html" class="link-more text-sm">ย้อนกลับไปเลือกใหม่</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===================== DECLINED ===================== -->
+        <section class="offer-state" id="declined">
+          <div class="success-box">
+            <div class="success-icon success-icon--warn">
+              <img class="icon-img" src="assets/image/close.png" alt="">
+            </div>
+            <h1>บันทึกการสละสิทธิ์เรียบร้อย</h1>
+            <p class="sub">ระบบได้รับการแจ้งการสละสิทธิ์ของคุณแล้ว และส่งอีเมลยืนยันไปที่ wisanu@gmail.com</p>
+
+            <div class="card text-left mb-24">
+              <div class="card__body">
+                <div class="info-row">
+                  <span class="lbl">สถานะสิทธิ์</span>
+                  <b>สละสิทธิ์แล้ว</b>
+                </div>
+                <div class="info-row">
+                  <span class="lbl">หลักสูตร</span>
+                  <b>วิศวกรรมคอมพิวเตอร์ (วศ.บ.)</b>
+                </div>
+                <div class="info-row">
+                  <span class="lbl">วันที่ดำเนินการ</span>
+                  <b>18 ธันวาคม 2587 · 09:24 น.</b>
+                </div>
+              </div>
+            </div>
+
+            <div class="alert alert--warn" style="text-align:left">
+              <img class="icon-img" src="assets/image/warning.png" alt="">
+              <span>การสละสิทธิ์ในรอบนี้ถือเป็นการปฏิเสธสิทธิ์ในรอบการรับสมัครถัดไป หากมีข้อสงสัยกรุณาติดต่อฝ่ายทะเบียน โทร 0-2555-2000 ต่อ 1221</span>
+            </div>
+
+            <div class="row row--center-wrap mt-24">
+              <a href="dashboard.html" class="btn btn--primary btn--lg">กลับแดชบอร์ด</a>
+              <a href="admission-result.html" class="btn btn--outline btn--lg">ดูผลการคัดเลือก</a>
+            </div>
+            <div class="mt-16">
+              <a href="confirm-offer.html" class="link-more text-sm">ย้อนกลับไปเลือกใหม่</a>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

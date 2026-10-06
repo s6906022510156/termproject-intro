@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>อัปโหลดเอกสาร — ขั้นตอนที่ 5 | KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== DASHBOARD HEADER ===================== -->
+  <header class="dash-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="dash-nav">
+        <a href="dashboard.html">แดชบอร์ด</a>
+        <a href="application-form.html">ใบสมัครของฉัน</a>
+        <a href="document-upload.html" class="active">เอกสาร</a>
+        <a href="application-tracking.html">ไทม์ไลน์</a>
+        <a href="admission-result.html">ผลการคัดเลือก</a>
+      </nav>
+
+      <div class="user-chip">
+        <span class="user-chip__avatar">
+          <img src="assets/image/user-profile.png" alt="">
+        </span>
+        <span class="user-chip__meta">
+          <span class="user-chip__name">นายวิษณุ พวงยอด</span>
+          <span class="user-chip__role">ผู้สมัคร · ID 6801100123</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== FORM SHELL ===================== -->
+  <main>
+    <div class="container form-shell">
+
+      <!-- Stepper 7 ขั้น -->
+      <div class="stepper">
+        <div class="stepper__step done">
+          <span class="stepper__dot"><img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt=""></span>
+          <span class="stepper__label">รอบที่สมัคร</span>
+        </div>
+        <div class="stepper__step done">
+          <span class="stepper__dot"><img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt=""></span>
+          <span class="stepper__label">หลักสูตร</span>
+        </div>
+        <div class="stepper__step done">
+          <span class="stepper__dot"><img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt=""></span>
+          <span class="stepper__label">ข้อมูลส่วนตัว</span>
+        </div>
+        <div class="stepper__step done">
+          <span class="stepper__dot"><img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt=""></span>
+          <span class="stepper__label">ที่อยู่</span>
+        </div>
+        <div class="stepper__step current">
+          <span class="stepper__dot">5</span>
+          <span class="stepper__label">เอกสาร</span>
+        </div>
+        <div class="stepper__step">
+          <span class="stepper__dot">6</span>
+          <span class="stepper__label">ตรวจสอบข้อมูล</span>
+        </div>
+        <div class="stepper__step">
+          <span class="stepper__dot">7</span>
+          <span class="stepper__label">ยืนยันการสมัคร</span>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h2>อัปโหลดเอกสารประกอบใบสมัคร</h2>
+        <p class="form-card__sub">
+          ขั้นตอนที่ 5 จาก 7 · ไฟล์รองรับ PDF, JPG, PNG ขนาดไม่เกิน 5 MB ต่อไฟล์
+        </p>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">1</span>
+            รูปถ่ายหน้าตรง
+          </div>
+
+          <div class="upload-zone mb-16">
+            <div class="upload-zone__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <div class="upload-zone__title">ลากไฟล์มาวางที่นี่ หรือ คลิกเพื่อเลือกไฟล์</div>
+            <div class="upload-zone__sub">JPG, PNG · ไม่เกิน 5 MB · พื้นหลังขาว</div>
+          </div>
+
+          <div class="file-row">
+            <span class="file-row__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </span>
+            <div>
+              <div class="file-row__name">รูปถ่าย_วิษณุ_3x4.jpg</div>
+              <div class="file-row__size">1.2 MB · อัปโหลดเมื่อ 15 พ.ย. 2587 · 10:24</div>
+            </div>
+            <span class="file-row__ok">
+              <img class="icon-img" src="assets/image/checkmark.png" alt="">
+              อัปโหลดสำเร็จ
+            </span>
+            <button class="file-row__del" aria-label="ลบไฟล์">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">2</span>
+            สำเนาบัตรประชาชน (ทั้งสองหน้า)
+          </div>
+
+          <div class="upload-zone mb-16">
+            <div class="upload-zone__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="8" cy="10" r="2"/><path d="M5 17c.7-1.7 2-2.5 3.5-2.5S11 15.3 11.7 17"/><path d="M14 10h5M14 14h5"/></svg>
+            </div>
+            <div class="upload-zone__title">อัปโหลดบัตรประชาชน</div>
+            <div class="upload-zone__sub">PDF หรือภาพถ่ายบัตรทั้ง 2 หน้าในไฟล์เดียว</div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">3</span>
+            ใบรับรองผลการศึกษา / ปพ.1 (ทรานสคริปต์)
+          </div>
+
+          <div class="upload-zone mb-16">
+            <div class="upload-zone__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8M16 17H8M10 9H8"/></svg>
+            </div>
+            <div class="upload-zone__title">อัปโหลดผลการศึกษา</div>
+            <div class="upload-zone__sub">PDF เท่านั้น ไม่เกิน 5 MB</div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">4</span>
+            แฟ้มสะสมผลงาน (Portfolio)
+          </div>
+
+          <div class="upload-zone mb-16">
+            <div class="upload-zone__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div class="upload-zone__title">อัปโหลดแฟ้มสะสมผลงาน</div>
+            <div class="upload-zone__sub">PDF ไม่เกิน 10 MB</div>
+          </div>
+        </div>
+
+        <div class="alert alert--warn mb-24">
+          <img class="icon-img" src="assets/image/warning.png" alt="">
+          <span>ยังขาดเอกสาร 2 รายการ (บัตรประชาชน, ผลการศึกษา, Portfolio) — ต้องอัปโหลดให้ครบก่อนถึงขั้นตอนยืนยันการสมัคร</span>
+        </div>
+
+        <div class="spread form-actions">
+          <a href="application-form.html" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            กลับขั้นตอนก่อนหน้า
+          </a>
+          <div class="row">
+            <button class="btn btn--outline">บันทึกฉบับร่าง</button>
+            <a href="application-review.html" class="btn btn--primary">
+              บันทึกและดำเนินการต่อ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

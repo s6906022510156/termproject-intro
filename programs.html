@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ค้นหาหลักสูตร — KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="admission-info.html">ข้อมูลรับสมัคร</a>
+        <a href="programs.html" class="active">หลักสูตร</a>
+        <a href="admission-info.html#schedule">กำหนดเวลา</a>
+        <a href="admission-info.html#news">ประกาศ</a>
+        <a href="index.html#faq">คำถามที่พบบ่อย</a>
+      </nav>
+
+      <div class="row header-actions">
+        <a href="login.html" class="btn btn--primary btn--sm">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg>
+          เข้าสู่ระบบผู้สมัคร
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HERO ===================== -->
+  <section class="page-hero" style="padding:42px 0">
+    <div class="container">
+      <nav class="crumb">
+        <a href="index.html">หน้าหลัก</a> / ค้นหาหลักสูตร
+      </nav>
+      <h1>ค้นหาหลักสูตรที่เปิดรับสมัคร</h1>
+      <p>รวมหลักสูตรจากทุกคณะของ มจพ. ประจำปีการศึกษา 2588</p>
+    </div>
+  </section>
+
+  <!-- ===================== EXPLORER ===================== -->
+  <main>
+    <div class="container explore">
+
+      <!-- FILTERS -->
+      <aside class="filter-card">
+        <div class="filter-card__head">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+          ตัวกรองผลลัพธ์
+        </div>
+
+        <div class="filter-group">
+          <h4>ค้นหาด้วยชื่อ</h4>
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input class="input" type="text" placeholder="ชื่อหลักสูตร / สาขา...">
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <h4>คณะ / วิทยาลัย</h4>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span>วิศวกรรมศาสตร์</span>
+            <span class="count-tag">48</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>เทคโนโลยีสารสนเทศ</span>
+            <span class="count-tag">12</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>วิทยาศาสตร์ประยุกต์</span>
+            <span class="count-tag">18</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>เทคโนโลยีและการจัดการอุตสาหกรรม</span>
+            <span class="count-tag">15</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>ครุศาสตร์อุตสาหกรรม</span>
+            <span class="count-tag">22</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>อุตสาหกรรมเกษตร</span>
+            <span class="count-tag">8</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>บริหารธุรกิจและอุตสาหกรรมบริการ</span>
+            <span class="count-tag">10</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <h4>ระดับปริญญา</h4>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span>ปริญญาตรี 4 ปี</span>
+            <span class="count-tag">86</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>ปริญญาตรี หลักสูตรต่อเนื่อง</span>
+            <span class="count-tag">24</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>ปริญญาตรี หลักสูตรนานาชาติ</span>
+            <span class="count-tag">10</span>
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <h4>รอบการรับสมัคร</h4>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span>TCAS 88 รอบ 1 Portfolio</span>
+          </label>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span>TCAS 88 รอบ 2 โควตา</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>TCAS 88 รอบ 3 Admission</span>
+          </label>
+          <label class="check">
+            <input type="checkbox">
+            <span>TCAS 88 รอบ 4 Direct Admission</span>
+          </label>
+        </div>
+
+        <div style="padding:16px 20px">
+          <button class="btn btn--primary btn--block">กรองผลลัพธ์</button>
+          <button class="btn btn--ghost btn--block mt-8">ล้างตัวกรอง</button>
+        </div>
+      </aside>
+
+      <!-- RESULTS -->
+      <div class="explore__main">
+
+        <div class="row toolbar">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input class="input" type="text" placeholder="ค้นหาหลักสูตรที่ต้องการ เช่น วิศวกรรมคอมพิวเตอร์...">
+          </div>
+          <div class="toolbar__sort">
+            <span>เรียงโดย</span>
+            <select class="select">
+              <option>ยอดนิยม</option>
+              <option>ชื่อหลักสูตร</option>
+              <option>คณะ</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="alert alert--info">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>พบ <b>120</b> หลักสูตรที่เปิดรับสมัคร ปีการศึกษา 2588</span>
+        </div>
+
+        <!-- Card 1 -->
+        <div class="program-card">
+          <div class="program-card__thumb program-card__thumb--maroon">
+            <img src="assets/image/computer-engineering-img.png" alt="">
+          </div>
+          <div class="program-card__body">
+            <h3><a href="program-detail.html">วิศวกรรมคอมพิวเตอร์ (Computer Engineering)</a></h3>
+            <p class="program-card__faculty">คณะวิศวกรรมศาสตร์</p>
+            <div class="program-card__tags">
+              <span class="badge badge--maroon">หลักสูตรปริญญาตรี 4 ปี</span>
+              <span class="badge badge--blue">TCAS 88 รอบ 1</span>
+              <span class="badge badge--green">เปิดรับแล้ว</span>
+            </div>
+            <p class="program-card__desc">หลักสูตรที่ครอบคลุมทั้งฮาร์ดแวร์ ซอฟต์แวร์ และระบบเครือข่ายคอมพิวเตอร์ เตรียมความพร้อมสู่การเป็นวิศวกรซอฟต์แวร์และวิศวกรเครือข่ายมืออาชีพ</p>
+          </div>
+          <div class="program-card__aside">
+            <div class="program-card__meta">
+              <div class="prog">60 ที่</div>
+              <div class="lbl">รับเข้าศึกษา</div>
+            </div>
+            <a href="program-detail.html" class="btn btn--primary btn--sm">ดูรายละเอียด</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="program-card">
+          <div class="program-card__thumb program-card__thumb--blue">
+            <img src="assets/image/software-engineering-img.png" alt="">
+          </div>
+          <div class="program-card__body">
+            <h3><a href="program-detail.html">วิศวกรรมซอฟต์แวร์ (Software Engineering)</a></h3>
+            <p class="program-card__faculty">คณะเทคโนโลยีสารสนเทศ</p>
+            <div class="program-card__tags">
+              <span class="badge badge--maroon">หลักสูตรปริญญาตรี 4 ปี</span>
+              <span class="badge badge--blue">TCAS 88 รอบ 1</span>
+              <span class="badge badge--green">เปิดรับแล้ว</span>
+            </div>
+            <p class="program-card__desc">พัฒนาโปรแกรมเมอร์ที่มีทักษะการออกแบบ พัฒนา และทดสอบซอฟต์แวร์ด้วยเทคโนโลยีล้ำสมัย พร้อมฝึกงานกับภาคอุตสาหกรรมจริง</p>
+          </div>
+          <div class="program-card__aside">
+            <div class="program-card__meta">
+              <div class="prog">45 ที่</div>
+              <div class="lbl">รับเข้าศึกษา</div>
+            </div>
+            <a href="program-detail.html" class="btn btn--primary btn--sm">ดูรายละเอียด</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="program-card">
+          <div class="program-card__thumb program-card__thumb--green">
+            <img src="assets/image/data-sci-img.png" alt="">
+          </div>
+          <div class="program-card__body">
+            <h3><a href="program-detail.html">วิทยาการข้อมูลและการวิเคราะห์ธุรกิจ (Data Science)</a></h3>
+            <p class="program-card__faculty">คณะวิทยาศาสตร์ประยุกต์</p>
+            <div class="program-card__tags">
+              <span class="badge badge--maroon">หลักสูตรปริญญาตรี 4 ปี</span>
+              <span class="badge badge--blue">TCAS 88 รอบ 1</span>
+              <span class="badge badge--yellow">ใกล้เต็ม</span>
+            </div>
+            <p class="program-card__desc">สร้างนักวิทยาศาสตร์ข้อมูลที่เชี่ยวชาญการวิเคราะห์ข้อมูลขนาดใหญ่ เครื่องเรียนรู้ และการตัดสินใจเชิงธุรกิจด้วยข้อมูล</p>
+          </div>
+          <div class="program-card__aside">
+            <div class="program-card__meta">
+              <div class="prog">40 ที่</div>
+              <div class="lbl">รับเข้าศึกษา</div>
+            </div>
+            <a href="program-detail.html" class="btn btn--primary btn--sm">ดูรายละเอียด</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="program-card">
+          <div class="program-card__thumb program-card__thumb--purple">
+            <img src="assets/image/mechanical-engineering-img.png" alt="">
+          </div>
+          <div class="program-card__body">
+            <h3><a href="program-detail.html">วิศวกรรมเครื่องกล (Mechanical Engineering)</a></h3>
+            <p class="program-card__faculty">คณะวิศวกรรมศาสตร์</p>
+            <div class="program-card__tags">
+              <span class="badge badge--maroon">หลักสูตรปริญญาตรี 4 ปี</span>
+              <span class="badge badge--blue">TCAS 88 รอบ 2</span>
+              <span class="badge badge--green">เปิดรับแล้ว</span>
+            </div>
+            <p class="program-card__desc">ได้เรียนรู้การออกแบบเครื่องจักรกล ระบบพลังงาน หุ่นยนต์อุตสาหกรรม และเทคโนโลยีการผลิตขั้นสูง ตามแนวทาง Industry 4.0</p>
+          </div>
+          <div class="program-card__aside">
+            <div class="program-card__meta">
+              <div class="prog">120 ที่</div>
+              <div class="lbl">รับเข้าศึกษา</div>
+            </div>
+            <a href="program-detail.html" class="btn btn--primary btn--sm">ดูรายละเอียด</a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="program-card">
+          <div class="program-card__thumb program-card__thumb--warning">
+            <img src="assets/image/accountant-img.png" alt="">
+          </div>
+          <div class="program-card__body">
+            <h3><a href="program-detail.html">บัญชีและระบบสารสนเทศทางการเงิน (Accounting)</a></h3>
+            <p class="program-card__faculty">คณะบริหารธุรกิจและอุตสาหกรรมบริการ</p>
+            <div class="program-card__tags">
+              <span class="badge badge--maroon">หลักสูตรปริญญาตรี 4 ปี</span>
+              <span class="badge badge--blue">TCAS 88 รอบ 2</span>
+              <span class="badge badge--green">เปิดรับแล้ว</span>
+            </div>
+            <p class="program-card__desc">บูรณาการความรู้ด้านบัญชี การเงิน และระบบสารสนเทศ เพื่อรองรับวิชาชีพนักบัญชีดิจิทัลในยุคไทยแลนด์ 4.0</p>
+          </div>
+          <div class="program-card__aside">
+            <div class="program-card__meta">
+              <div class="prog">30 ที่</div>
+              <div class="lbl">รับเข้าศึกษา</div>
+            </div>
+            <a href="program-detail.html" class="btn btn--primary btn--sm">ดูรายละเอียด</a>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <nav class="pagination">
+          <a href="#" aria-label="ก่อนหน้า">‹</a>
+          <a href="#" class="current">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">…</a>
+          <a href="#">12</a>
+          <a href="#" aria-label="ถัดไป">›</a>
+        </nav>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-footer__top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand">
+            <span class="brand__logo">
+              <img src="assets/image/logo-kmutnb.png" alt="">
+            </span>
+            <span>
+              <span class="brand__name">KMUTNB Admissions</span>
+              <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+            </span>
+          </a>
+          <p class="footer-brand__desc">
+            มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ (มจพ.) 1518 ถนนประชาราษฎร์ 1 เขตบางซื่อ กรุงเทพมหานคร 10800
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.7c0-.9.3-1.6 1.7-1.6h1.5V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4v2.7H7.7V14h2.8v8h3z"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-4.9-6.4L6.4 22H3.2l7.3-8.3L1.2 2h6.5l4.4 5.9L18.9 2zm-1.1 18h1.7L7.1 3.7H5.3L17.8 20z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.3 5 12 5 12 5s-6.3 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.7 19 12 19 12 19s6.3 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a>
+            <a href="#" aria-label="Line"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.2 2 11.3c0 2.8 1.5 5.4 3.8 7-.3.9-.9 2-1 2.2-.1.2.1.4.3.3 1.2-.5 2.6-1.3 3.4-2 1.2.3 2.4.5 3.5.5 5.5 0 10-4.2 10-9.3S17.5 2 12 2z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>รอบการรับสมัคร</h4>
+          <ul>
+            <li><a href="admission-info.html">TCAS 88 รอบ 1 Portfolio</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 2 โควตา</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 3 Admission</a></li>
+            <li><a href="admission-info.html">TCAS 88 รอบ 4 Direct Admission</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ลิงก์ด่วน</h4>
+          <ul>
+            <li><a href="programs.html">ค้นหาหลักสูตร</a></li>
+            <li><a href="login.html">เข้าสู่ระบบผู้สมัคร</a></li>
+            <li><a href="create-account.html">สมัครสมาชิกใหม่</a></li>
+            <li><a href="index.html#faq">คำถามที่พบบ่อย</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>ข้อมูลติดต่อ</h4>
+          <ul>
+            <li><a href="#">โทร 0-2555-2000 ต่อ 1221</a></li>
+            <li><a href="#">admission@kmutnb.ac.th</a></li>
+            <li><a href="#">facebook.com/KMUTNBAdmission</a></li>
+            <li><a href="#">เวลาทำการ จ.–ศ. 08.30–16.30 น.</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <div class="container">
+        © 2025 มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ · ฝ่ายทะเบียนและประมวลผล · ระบบรับสมัครนักศึกษาใหม่
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

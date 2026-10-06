@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ใบสมัครออนไลน์ — ขั้นตอนที่ 1 | KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== DASHBOARD HEADER ===================== -->
+  <header class="dash-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="dash-nav">
+        <a href="dashboard.html">แดชบอร์ด</a>
+        <a href="application-form.html" class="active">ใบสมัครของฉัน</a>
+        <a href="document-upload.html">เอกสาร</a>
+        <a href="application-tracking.html">ไทม์ไลน์</a>
+        <a href="admission-result.html">ผลการคัดเลือก</a>
+      </nav>
+
+      <div class="user-chip">
+        <span class="user-chip__avatar">
+          <img src="assets/image/user-profile.png" alt="">
+        </span>
+        <span class="user-chip__meta">
+          <span class="user-chip__name">นายวิษณุ พวงยอด</span>
+          <span class="user-chip__role">ผู้สมัคร · ID 6801100123</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== FORM SHELL ===================== -->
+  <main>
+    <div class="container form-shell">
+
+      <!-- Stepper 7 ขั้น -->
+      <div class="stepper">
+        <div class="stepper__step done">
+          <span class="stepper__dot"><img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt=""></span>
+          <span class="stepper__label">รอบที่สมัคร</span>
+        </div>
+        <div class="stepper__step done">
+          <span class="stepper__dot"><img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt=""></span>
+          <span class="stepper__label">หลักสูตร</span>
+        </div>
+        <div class="stepper__step current">
+          <span class="stepper__dot">3</span>
+          <span class="stepper__label">ข้อมูลส่วนตัว</span>
+        </div>
+        <div class="stepper__step">
+          <span class="stepper__dot">4</span>
+          <span class="stepper__label">ที่อยู่</span>
+        </div>
+        <div class="stepper__step">
+          <span class="stepper__dot">5</span>
+          <span class="stepper__label">เอกสาร</span>
+        </div>
+        <div class="stepper__step">
+          <span class="stepper__dot">6</span>
+          <span class="stepper__label">ตรวจสอบข้อมูล</span>
+        </div>
+        <div class="stepper__step">
+          <span class="stepper__dot">7</span>
+          <span class="stepper__label">ยืนยันการสมัคร</span>
+        </div>
+      </div>
+
+      <!-- Step info -->
+      <div class="form-card">
+        <h2>ข้อมูลส่วนตัวของผู้สมัคร</h2>
+        <p class="form-card__sub">
+          ขั้นตอนที่ 3 จาก 7 · กรอกข้อมูลให้ตรงกับบัตรประจำตัวประชาชนและเอกสารราชการเท่านั้น
+        </p>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">1</span>
+            ชื่อ-นามสกุล
+          </div>
+
+          <div class="form-grid mb-16">
+            <div class="field">
+              <label class="field__label">คำนำหน้าชื่อ <span class="req">*</span></label>
+              <select class="select" required>
+                <option>นาย</option>
+                <option>นางสาว</option>
+                <option>นาง</option>
+                <option>อื่น ๆ</option>
+              </select>
+            </div>
+            <div class="field">
+              <label class="field__label">ชื่อภาษาไทย <span class="req">*</span></label>
+              <input class="input" type="text" value="วิษณุ" placeholder="ชื่อจริง" maxlength="50" required>
+            </div>
+          </div>
+
+          <div class="form-grid mb-16">
+            <div class="field">
+              <label class="field__label">นามสกุลภาษาไทย <span class="req">*</span></label>
+              <input class="input" type="text" value="สุขสวัสดิ์" placeholder="นามสกุล" maxlength="50" required>
+            </div>
+            <div class="field">
+              <label class="field__label">ชื่อเล่น</label>
+              <input class="input" type="text" value="นก" placeholder="ชื่อเล่น" maxlength="50">
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label">ชื่อภาษาอังกฤษ (ตัวจริง)</label>
+              <input class="input" type="text" value="VISANU" placeholder="NAME" pattern="[A-Za-z]+([ \-'][A-Za-z]+)*" title="กรอกเป็นตัวอักษรอังกฤษเท่านั้น" maxlength="50">
+            </div>
+            <div class="field">
+              <label class="field__label">นามสกุลภาษาอังกฤษ</label>
+              <input class="input" type="text" value="PONGYOT" placeholder="SURNAME" pattern="[A-Za-z]+([ \-'][A-Za-z]+)*" title="กรอกเป็นตัวอักษรอังกฤษเท่านั้น" maxlength="50">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">2</span>
+            ข้อมูลบัตรประชาชน
+          </div>
+
+          <div class="form-grid--34 mb-16">
+            <div class="field">
+              <label class="field__label">เลขบัตรประจำตัวประชาชน <span class="req">*</span></label>
+              <input class="input input--ok" type="text" value="1-1037-12345-67-8" readonly required>
+            </div>
+            <div class="field">
+              <label class="field__label">วันเดือนปีเกิด <span class="req">*</span></label>
+              <input class="input" type="date" value="2007-03-14" required>
+            </div>
+            <div class="field">
+              <label class="field__label">อายุ (ปี)</label>
+              <input class="input" type="text" value="18" readonly>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label">เพศ <span class="req">*</span></label>
+              <div class="radio-row">
+                <label class="radio"><input type="radio" name="gender" checked required><span>ชาย</span></label>
+                <label class="radio"><input type="radio" name="gender"><span>หญิง</span></label>
+                <label class="radio"><input type="radio" name="gender"><span>ไม่ระบุ</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field__label">สัญชาติ <span class="req">*</span></label>
+              <select class="select" required>
+                <option selected>ไทย</option>
+                <option>อื่น ๆ</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <div class="form-section__title">
+            <span class="num">3</span>
+            ข้อมูลการศึกษา
+          </div>
+
+          <div class="form-grid mb-16">
+            <div class="field">
+              <label class="field__label">สถานศึกษา <span class="req">*</span></label>
+              <input class="input" type="text" value="โรงเรียนสตรีวิทยา" placeholder="ชื่อโรงเรียน" maxlength="100" required>
+            </div>
+            <div class="field">
+              <label class="field__label">แผนการเรียน <span class="req">*</span></label>
+              <select class="select" required>
+                <option selected>วิทยาศาสตร์-คณิตศาสตร์</option>
+                <option>การเรียนรวม</option>
+                <option>อื่น ๆ</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label">เกรดเฉลี่ยสะสม (GPAX) <span class="req">*</span></label>
+              <input class="input" type="text" value="3.85" placeholder="0.00" inputmode="decimal" pattern="([0-3](\.[0-9]{1,2})?|4(\.0{1,2})?)" title="กรอกค่าเฉลี่ยระหว่าง 0.00 ถึง 4.00 เช่น 3.85" required>
+            </div>
+            <div class="field">
+              <label class="field__label">ปีที่คาดว่าจะสำเร็จการศึกษา</label>
+              <input class="input" type="text" value="2588" inputmode="numeric" pattern="25[0-9]{2}" maxlength="4" title="กรอกปีพุทธศักราช 4 หลัก เช่น 2571">
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert--info mb-24">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span>ข้อมูลที่กรอกต้องตรงกับเอกสารราชการ หากไม่ตรวจสอบก่อนส่งอาจถูกตัดสิทธิ์การสมัคร</span>
+        </div>
+
+        <div class="spread form-actions">
+          <a href="dashboard.html" class="btn btn--ghost">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+            กลับแดชบอร์ด
+          </a>
+          <div class="row">
+            <button class="btn btn--outline">บันทึกฉบับร่าง</button>
+            <a href="document-upload.html" class="btn btn--primary">
+              บันทึกและดำเนินการต่อ
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+</body>
+</html>

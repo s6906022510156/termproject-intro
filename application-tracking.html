@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ติดตามสถานะใบสมัคร — KMUTNB Admissions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Kanit:wght@400;500;600;700&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/forms.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- ===================== DASHBOARD HEADER ===================== -->
+  <header class="dash-header">
+    <div class="container">
+      <a href="index.html" class="brand">
+        <span class="brand__logo">
+          <img src="assets/image/logo-kmutnb.png" alt="">
+        </span>
+        <span>
+          <span class="brand__name">KMUTNB Admissions</span>
+          <span class="brand__sub">ระบบรับสมัครนักศึกษาใหม่</span>
+        </span>
+      </a>
+
+      <nav class="dash-nav">
+        <a href="dashboard.html">แดชบอร์ด</a>
+        <a href="application-form.html">ใบสมัครของฉัน</a>
+        <a href="document-upload.html">เอกสาร</a>
+        <a href="application-tracking.html" class="active">ไทม์ไลน์</a>
+        <a href="admission-result.html">ผลการคัดเลือก</a>
+      </nav>
+
+      <div class="user-chip">
+        <span class="user-chip__avatar">
+          <img src="assets/image/user-profile.png" alt="">
+        </span>
+        <span class="user-chip__meta">
+          <span class="user-chip__name">นายวิษณุ พวงยอด</span>
+          <span class="user-chip__role">ผู้สมัคร · ID 6801100123</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== BODY ===================== -->
+  <main class="dash-page">
+    <div class="container dash-wrap">
+
+      <div class="section-title" style="margin-bottom:20px">
+        <div>
+          <h2>ติดตามสถานะใบสมัคร <em>แบบเรียลไทม์</em></h2>
+          <p class="section-title__sub">TCAS 88 รอบ 1 · Portfolio · วิศวกรรมคอมพิวเตอร์</p>
+        </div>
+        <span class="badge badge--blue">
+          <span class="badge__dot"></span>อยู่ระหว่างดำเนินการ
+        </span>
+      </div>
+
+      <div class="dash-grid">
+
+        <!-- LEFT: timeline -->
+        <div>
+          <div class="card">
+            <div class="spread card__head">
+              <h2>ขั้นตอนการสมัครของคุณ</h2>
+              <span class="text-sm text-gray">อัปเดตล่าสุด 15 พ.ย. 2587 · 10:24 น.</span>
+            </div>
+            <div class="card__body">
+
+              <div class="timeline">
+
+                <div class="timeline__item">
+                  <span class="timeline__icon done">
+                    <img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt="">
+                  </span>
+                  <div class="timeline__date">5 กันยายน 2587 · 09:12</div>
+                  <div class="timeline__title">สมัครสมาชิกบัญชีผู้สมัคร</div>
+                  <div class="timeline__desc">สร้างบัญชีและยืนยันตัวตนด้วยบัตรประชาชนเรียบร้อยแล้ว</div>
+                </div>
+
+                <div class="timeline__item">
+                  <span class="timeline__icon done">
+                    <img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt="">
+                  </span>
+                  <div class="timeline__date">12 กันยายน 2587 · 15:40</div>
+                  <div class="timeline__title">เริ่มกรอกใบสมัครออนไลน์</div>
+                  <div class="timeline__desc">เลือกรอบ Portfolio และหลักสูตรวิศวกรรมคอมพิวเตอร์</div>
+                </div>
+
+                <div class="timeline__item">
+                  <span class="timeline__icon done">
+                    <img class="icon-img icon-img--light" src="assets/image/checkmark.png" alt="">
+                  </span>
+                  <div class="timeline__date">15 พฤศจิกายน 2587 · 10:24</div>
+                  <div class="timeline__title">อัปโหลดเอกสารบางส่วน</div>
+                  <div class="timeline__desc">อัปโหลดรูปถ่ายเรียบร้อย 1/4 รายการ</div>
+                </div>
+
+                <div class="timeline__item current">
+                  <span class="timeline__icon current">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  </span>
+                  <div class="timeline__date">รอดำเนินการ</div>
+                  <div class="timeline__title">อัปโหลดเอกสารให้ครบถ้วน</div>
+                  <div class="timeline__desc">
+                    ยังขาดเอกสาร 3 รายการ ได้แก่ บัตรประชาชน, ทรานสคริปต์ และ Portfolio — <a href="document-upload.html" class="text-maroon" style="font-weight:600">กดที่นี่เพื่ออัปโหลด</a>
+                  </div>
+                  <span class="badge badge--yellow mt-12">ดำเนินการเร่งด่วน</span>
+                </div>
+
+                <div class="timeline__item">
+                  <span class="timeline__icon upcoming">4</span>
+                  <div class="timeline__date">คาดการณ์ภายใน 7 ธ.ค. 2587</div>
+                  <div class="timeline__title">เข้าสอบสัมภาษณ์</div>
+                  <div class="timeline__desc">สัมภาษณ์ตามกำหนดของคณะวิศวกรรมศาสตร์</div>
+                </div>
+
+                <div class="timeline__item">
+                  <span class="timeline__icon upcoming">5</span>
+                  <div class="timeline__date">15 ธันวาคม 2587</div>
+                  <div class="timeline__title">ประกาศผลการคัดเลือก</div>
+                  <div class="timeline__desc">ประกาศผลทางเว็บไซต์และอีเมลที่ลงทะเบียน</div>
+                </div>
+
+                <div class="timeline__item">
+                  <span class="timeline__icon upcoming">6</span>
+                  <div class="timeline__date">18 – 21 ธันวาคม 2587</div>
+                  <div class="timeline__title">ยืนยันสิทธิ์เข้าศึกษา</div>
+                  <div class="timeline__desc">ยืนยันสิทธิ์ผ่านระบบ TCAS ของ ทปอ.
+                    — <a href="confirm-offer.html" class="text-maroon" style="font-weight:600">ไปดำเนินการ</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: sidebar -->
+        <aside>
+
+          <div class="widget mb-16">
+            <div class="widget__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>
+              <h3>กำหนดการที่เหลืออยู่</h3>
+            </div>
+            <div class="widget__body widget__body--deadline">
+              <div class="row deadline-row">
+                <span class="date-chip"><b>28</b><span>พ.ย.</span></span>
+                <span><span class="t">เอกสารครบถ้วน</span><br><span class="s">เหลือ 3 วัน</span></span>
+                <span class="badge badge--yellow ml-auto">เร่งด่วน</span>
+              </div>
+              <div class="row deadline-row">
+                <span class="date-chip"><b>30</b><span>พ.ย.</span></span>
+                <span><span class="t">ปิดรับสมัคร</span><br><span class="s">23.59 น.</span></span>
+              </div>
+              <div class="row deadline-row">
+                <span class="date-chip"><b>15</b><span>ธ.ค.</span></span>
+                <span><span class="t">ประกาศผล</span><br><span class="s">ผ่านเว็บไซต์/อีเมล</span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget widget--light mb-16">
+            <div class="widget__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <h3>คำแนะนำ</h3>
+            </div>
+            <div class="widget__body widget__body--small widget__body--muted">
+              <p class="mb-12">เมื่อส่งใบสมัครแล้วข้อมูลจะถูกส่งเข้าระบบพิจารณาและไม่สามารถแก้ไขได้ อัปโหลดเอกสารให้ครบและตรวจสอบก่อนกดส่ง</p>
+              <div class="alert alert--info alert--compact">
+                หากมีข้อสงสัยเกี่ยวกับขั้นตอน ติดต่อฝ่ายทะเบียนก่อนดำเนินการขั้นต่อไป
+              </div>
+            </div>
+          </div>
+
+          <div class="widget">
+            <div class="widget__head">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <h3>ขอความช่วยเหลือ</h3>
+            </div>
+            <div class="widget__body widget__body--small">
+              <p class="mb-8">ศูนย์ช่วยเหลือผู้สมัครเปิดให้บริการ</p>
+              <div style="font-family:var(--font-heading);font-size:20px;color:var(--color-primary-dark);margin-bottom:4px">0-2555-2000 ต่อ 1221</div>
+              <p class="text-xs text-gray mb-12">จ.–ศ. 08.30 – 16.30 น.<br>admission@kmutnb.ac.th</p>
+              <a href="index.html#faq" class="btn btn--outline btn--sm btn--block">ดูคำถามที่พบบ่อย</a>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
